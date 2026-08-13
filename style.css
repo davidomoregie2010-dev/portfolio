@@ -43,6 +43,28 @@ body{
     cursor: pointer;
     transition: 0.5s ease;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: rgb(242, 240, 236);
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
 
 .logo:hover{
   transform: scale(1.1);  
@@ -405,3 +427,30 @@ animation: cursor 0.6s infinite;
     margin-top: 4rem;
    } 
 }
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    color: rgb(242, 240, 236);
+  }
+}
+
+
+
+
+
