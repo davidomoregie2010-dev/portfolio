@@ -161,6 +161,14 @@ section p{
   transition: 0.3s;
 }
 
+.service-card img.service-img {
+    width: 100%;          /* makes image fill the card width */
+    height: 150px;        /* fixes height for consistency */
+    object-fit: cover;    /* crops nicely without stretching */
+    border-radius: 8px;   /* rounded corners */
+    margin-bottom: 15px;  /* space below image */
+}
+
 .service-card:hover {
   background: #333;
   transform: translateY(-5px);
