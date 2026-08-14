@@ -97,12 +97,13 @@ nav a:active {
         top: 0;
         right: 0;
         width: 40%;
-        border-left: 3px solid #cbcacf;
-        border-bottom: 3px solid #acacb2;
-        border-bottom-left-radius:2rem ;
         padding: 1rem ;
-        background-color: #020533;
-        border-top: 3px solid rgba(0,0,0,0.1);
+        background: transparent;
+      border: none;          
+    border-radius: 0;      
+    outline: none;         
+    box-shadow: none;   
+        
     }
 
  nav.active{
@@ -198,7 +199,7 @@ section p{
 }
 
 .footer {
-  background-color: #111;
+  background-color: #141946;
   color: #f2f0ec;
   text-align: center;
   padding: 20px;
@@ -452,7 +453,13 @@ animation: cursor 0.6s infinite;
 
   .hamburger {
     display: block;
-    color: rgb(242, 240, 236);
+    color: rgba(242, 240, 236);
+background: none; 
+ border: none;
+ outline: none;
+
+
+
   }
   html {
   scroll-behavior: smooth;
