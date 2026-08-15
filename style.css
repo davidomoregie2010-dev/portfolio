@@ -168,6 +168,13 @@ section p{
   background: #333 ;
   color: #020533;
 }
+.skill-fill {
+  background: #391bb1;
+  height: 100%;
+  width: 0; /* start empty */
+  border-radius: 10px;
+  transition: width 1.5s ease;
+}
 
 .service{
   display: grid;
